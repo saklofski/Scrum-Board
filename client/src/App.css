@@ -7,7 +7,7 @@
 
 body {
   font-size: 1rem;
-  background-color: #eee;
+  background-color: #fff;
   color: #333;
 }
 
@@ -34,11 +34,14 @@ body {
   opacity: 1;
 }
 
+
 .landing {
   height: 100vh;
-  color: white;
+  color: black;
   text-align: center;
-  background: linear-gradient(135deg, #0079bf, #5067c5);
+  /* background: linear-gradient(135deg, #0079bf, #5067c5); */
+  /* background-color: #FFFAFA; */
+  background-color: white;
 }
 
 .landing .top {
@@ -48,11 +51,23 @@ body {
   padding: 20px;
 }
 
+.landing .top a img{
+  margin-top: -25px;
+}
+
+.landing .top .gauche{
+  margin-left: -1180px;
+}
+
 .landing .landing-inner {
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 150px 50px;
+  padding: 50px 50px;
+}
+
+.landing .landing-inner img{
+ margin-left: -50px;
 }
 
 .landing h1 {
@@ -73,7 +88,7 @@ body {
 
 .landing p a:hover {
   color: darkgrey;
-}
+} 
 
 @media (max-width: 700px) {
   .landing h1 {
@@ -82,7 +97,7 @@ body {
 }
 
 .dashboard-and-navbar .navbar {
-  background-color: #026aa7;
+  background-color:grey;
 }
 
 .dashboard {
@@ -90,6 +105,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 50px;
+  background-color: white;
 }
 
 .dashboard h1 {
@@ -184,7 +200,7 @@ body {
 
 .board .board-top .board-top-left .board-title {
   cursor: pointer;
-  color: snow;
+  color: #000;
   padding: 5px 0 0 5px;
   max-width: 500px;
   white-space: nowrap;
@@ -229,6 +245,7 @@ body {
   color: darkslategrey;
   cursor: default;
   background-color: #eee;
+  margin-top: 5px;
 }
 
 .board .avatar:hover {
@@ -414,3 +431,4 @@ body {
 .board .lists .list-wrapper .list .cards .mouse-over {
   background-color: whitesmoke;
 }
+
