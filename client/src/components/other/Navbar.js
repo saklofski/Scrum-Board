@@ -13,8 +13,8 @@ const Navbar = () => {
 
   return (
     <nav className='navbar'>
-      <Link to='/dashboard'>Home</Link>
-      <Link to='/dashboard'>TrelloClone</Link>
+      {/* <Link to='/dashboard'>Home</Link> */}
+      <Link to='/dashboard'>Scrum board</Link>
       <Link to='/' onClick={() => dispatch(logout())}>
         Logout
       </Link>
@@ -23,3 +23,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
