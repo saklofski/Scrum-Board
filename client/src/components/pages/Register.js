@@ -11,11 +11,11 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
 import Link from '@material-ui/core/Link';
 import Grid from '@material-ui/core/Grid';
-import Box from '@material-ui/core/Box';
+/* import Box from '@material-ui/core/Box'; */
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 
-import Copyright from '../other/Copyright';
+/* import Copyright from '../other/Copyright'; */
 import useStyles from '../../utils/formStyles';
 
 const Register = () => {
@@ -31,7 +31,7 @@ const Register = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    document.title = 'TrelloClone | Sign Up';
+    document.title = 'Devoteam | Sign Up';
   }, []);
 
   const { name, email, password, password2 } = formData;
@@ -48,16 +48,16 @@ const Register = () => {
   };
 
   if (isAuthenticated) {
-    return <Redirect to='/dashboard' />;
+    return <Redirect to='/dashboard'/>;
   }
 
   return (
     <Container component='main' maxWidth='xs' className={classes.container}>
       <CssBaseline />
       <div className={classes.paper}>
-        <Typography component='h1' variant='h4'>
+        {/* <Typography component='h1' variant='h4'>
           TrelloClone
-        </Typography>
+        </Typography> */}
         <Typography component='h1' variant='h5'>
           Sign up
         </Typography>
@@ -131,9 +131,9 @@ const Register = () => {
           </Grid>
         </form>
       </div>
-      <Box mt={5}>
+      {/* <Box mt={5}>
         <Copyright />
-      </Box>
+      </Box> */}
     </Container>
   );
 };

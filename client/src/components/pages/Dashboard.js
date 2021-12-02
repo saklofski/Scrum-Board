@@ -17,7 +17,7 @@ const Dashboard = () => {
   }, [dispatch]);
 
   useEffect(() => {
-    document.title = 'Your Boards | TrelloClone';
+    document.title = 'Your Boards | Devoteam';
   }, []);
 
   if (!isAuthenticated) {
@@ -39,6 +39,7 @@ const Dashboard = () => {
           ))}
           <CreateBoard />
         </div>
+        <img src="rrr.png" alt="devoteamm" width="500" height="330"/>
       </section>
     </div>
   );

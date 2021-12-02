@@ -21,11 +21,11 @@ const Board = ({ match }) => {
   }, [dispatch, match.params.id]);
 
   useEffect(() => {
-    if (board?.title) document.title = board.title + ' | TrelloClone';
+    if (board?.title) document.title = board.title + ' | Devoteam';
   }, [board?.title]);
 
   if (!isAuthenticated) {
-    return <Redirect to='/' />;
+    return <Redirect to='/dashboard' />;
   }
 
   const onDragEnd = (result) => {
@@ -61,7 +61,7 @@ const Board = ({ match }) => {
           'url(' +
           (board.backgroundURL
             ? board.backgroundURL
-            : 'https://images.unsplash.com/photo-1598197748967-b4674cb3c266?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2689&q=80') +
+            : 'https://www.lucibel.io/wp-content/uploads/2019/12/image-blanche-800x548px.jpg') +
           ')',
       }}
     >

@@ -10,11 +10,11 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
 import Link from '@material-ui/core/Link';
 import Grid from '@material-ui/core/Grid';
-import Box from '@material-ui/core/Box';
+/* import Box from '@material-ui/core/Box'; */
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 
-import Copyright from '../other/Copyright';
+/* import Copyright from '../other/Copyright'; */
 import useStyles from '../../utils/formStyles';
 
 const Login = () => {
@@ -30,7 +30,7 @@ const Login = () => {
   const { email, password } = formData;
 
   useEffect(() => {
-    document.title = 'TrelloClone | Sign In';
+    document.title = 'Devoteam | Sign In';
   }, []);
 
   const onChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -48,9 +48,9 @@ const Login = () => {
     <Container component='main' maxWidth='xs' className={classes.container}>
       <CssBaseline />
       <div className={classes.paper}>
-        <Typography component='h1' variant='h4'>
+        {/* <Typography component='h1' variant='h4'>
           TrelloClone
-        </Typography>
+        </Typography> */}
         <Typography component='h1' variant='h5'>
           Sign in
         </Typography>
@@ -97,9 +97,9 @@ const Login = () => {
           </Grid>
         </form>
       </div>
-      <Box mt={8}>
+      {/* <Box mt={8}>
         <Copyright />
-      </Box>
+      </Box> */}
     </Container>
   );
 };
